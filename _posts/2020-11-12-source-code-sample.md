@@ -14,7 +14,7 @@ Meoooooooooow!
 
 Ruby Code:
 
-
+`
   def find_missing(sequence)
     consecutive     = sequence.each_cons(2)
     differences     = consecutive.map { |a,b| b - a }
@@ -22,6 +22,7 @@ Ruby Code:
     missing_between = consecutive.find { |a,b| (b - a) != sequence }
     missing_between.first + sequence
   end
+`
 
 
 C# code:
